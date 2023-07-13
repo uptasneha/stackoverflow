@@ -30,7 +30,7 @@ const Navbar = ({ handleSlideIn }) => {
       }
     }
     dispatch(setCurrentUser(JSON.parse(localStorage.getItem("Profile"))));
-  }, [User?.token, dispatch, handleLogout]);
+  }, [User?.token, dispatch]);
 
   return (
     <nav className="main-nav">
